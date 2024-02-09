@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SignUp Form</title>
+
+    <! -- style tag -->
+    <style>
+        body {
+            background-image: url("Images/sky_image.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        .loginForm {
+            width: 30%;
+            height: 350px;
+            margin-left: 35%;
+            margin-top: 80px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0);
+        }
+        
+        .myForm { 
+            width: 80%;
+            margin-left: 6%;
+            padding-left: 7%;
+            padding-top: 20px;
+            border-radius: 25px;
+            background-color: rgba(0, 0, 0, 0.15);
+        }
+
+        label {
+            font-size: 23px;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        input.in {
+            width: 85%;
+            height: 36px;
+            outline: none;
+            border: none;
+            margin-top: 4px;
+            padding: 3px;
+            padding-left: 20px;
+            font-size: 19px;
+            font-style: italic;
+            background-color: rgba(0, 0, 0, 0.15);
+        }
+
+        input.in:hover {
+            height: 38px;
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        input.btn {
+            width: 90%;
+            height: 40px;
+            border: none;
+            font-size: 19px;
+            font-weight: bold;
+            background-color: rgba(0, 0, 0, 0.35);
+        }
+
+        input.btn:hover {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .usericon {
+            height: 35%;
+            width: 35%;
+            margin-left: 28%;
+            border-radius: 50%;
+        }
+        
+          /*<! -- -Nav Bar  -->*/
+        ul {
+			width:90%;
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+		}
+		
+		li {
+			float: left;
+			width: 50%;
+			text-align: center;
+		}
+		
+		li a {
+			display: block;
+			padding: 8px;
+			background-color: rgba(0, 0, 0, 0);
+			text-decoration: none;
+			color: black;
+			font-weight: bold;
+		}
+		/* Change the link color to #111 (black) on hover */
+		li a:hover {
+			background-color: rgba(0, 0, 0, 0.2);
+		}
+		.active {
+			background-color: rgba(0, 0, 0, 0.15);
+		}
+		/*<! -- -Nav Bar  -->*/
+
+    </style>
+    <! -- -style tag -->
+</head>
+
+<body>
+	<h2 id = "res"> </h2>
+
+        <! -- div tag -- division login for>
+        <div class = "loginForm">
+
+                <! -- form tag -->
+                <form action = "SignUpServlet" method = "post" class = "myForm">
+					
+					<ul >
+						<li><a href="LoginPage.html">LOGIN</a></li>
+						<li><a class="active" href="#">SIGN UP</a></li>
+					</ul>
+                    
+                    <br>
+                    
+                    <img src = "Images/user-icon.png" alt = "User Icon" class="usericon">
+
+                    <br>
+
+                    <label for "uname"> Username </label>
+                    <input class = "in" type = "text" placeholder = "Enter Username" id = "uname" name = "Username" required>
+
+                    <br><br>
+
+                    <label for "pass"> Password </label>
+                    <input class = "in" type = "password" placeholder = "Enter password" id = "pass" name = "Password" required>
+                    
+                    <br><br>
+
+                    <input class="btn" type = "submit" value = "SIGN UP">
+                            
+                    <br><br>
+
+                </form>
+                <! -- -form tag -->
+
+        </div>
+        <! -- -div tag -->
+</body>
+</html>

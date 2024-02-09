@@ -1,0 +1,37 @@
+.heading{
+  color: red;
+  font-size: 35px;
+  text-align: center;
+}
+
+.sec33{
+  width: 33.3%;
+  float: left;
+  text-align: center;
+  padding: opx 50px;
+  box-sizing: border-box;
+}
+
+.sec33 img{
+ width: 300px;
+  height: 200px;
+}
+
+.sec33 h3{
+  color: red;
+}
+
+
+.button-container {
+            display: flex;
+            justify-content: center;
+}
+
+.flight-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+}
