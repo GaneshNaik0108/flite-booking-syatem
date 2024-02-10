@@ -1,1 +1,1 @@
-# flite-booking-syatem
+# flite-booking-system
